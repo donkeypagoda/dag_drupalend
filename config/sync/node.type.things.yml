@@ -1,0 +1,18 @@
+uuid: cda31dc7-f0d2-4ccf-84e4-23b81fa80e1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Things
+type: things
+description: 'you know, things... aka not stuff'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

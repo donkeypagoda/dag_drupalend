@@ -1,0 +1,39 @@
+uuid: e281afc2-c701-4798-b262-71cbf2f0e20c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.things.body
+    - field.field.node.things.field_things_image
+    - node.type.things
+  module:
+    - image
+    - text
+    - user
+id: node.things.default
+targetEntityType: node
+bundle: things
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_things_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
