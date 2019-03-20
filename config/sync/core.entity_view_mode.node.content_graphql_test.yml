@@ -1,0 +1,10 @@
+uuid: ba682480-4f5c-4c23-ba5b-d6e39b336a30
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.content_graphql_test
+label: content_graphql_test
+targetEntityType: node
+cache: true
