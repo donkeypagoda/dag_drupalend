@@ -1,20 +1,20 @@
-uuid: 81a20cb7-0b58-4adc-8fac-885d2496d05c
+uuid: 63910037-9900-48c6-ba96-ed6c8567ee87
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.things.body
-    - field.field.node.things.field_thing_tax
-    - field.field.node.things.field_things_image
+    - field.field.node.maybes.body
+    - field.field.node.maybes.field_maybe_tax
+    - field.field.node.maybes.field_maybeimage
     - image.style.thumbnail
-    - node.type.things
+    - node.type.maybes
   module:
     - image
     - path
     - text
-id: node.things.default
+id: node.maybes.default
 targetEntityType: node
-bundle: things
+bundle: maybes
 mode: default
 content:
   body:
@@ -32,7 +32,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_thing_tax:
+  field_maybe_tax:
     weight: 123
     settings:
       match_operator: CONTAINS
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_things_image:
+  field_maybeimage:
     weight: 122
     settings:
       progress_indicator: throbber

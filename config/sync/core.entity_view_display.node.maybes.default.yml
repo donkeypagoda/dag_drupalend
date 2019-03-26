@@ -1,19 +1,19 @@
-uuid: e281afc2-c701-4798-b262-71cbf2f0e20c
+uuid: 68e802be-dbad-4a1a-bb6e-28c5c3d727e3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.things.body
-    - field.field.node.things.field_thing_tax
-    - field.field.node.things.field_things_image
-    - node.type.things
+    - field.field.node.maybes.body
+    - field.field.node.maybes.field_maybe_tax
+    - field.field.node.maybes.field_maybeimage
+    - node.type.maybes
   module:
     - image
     - text
     - user
-id: node.things.default
+id: node.maybes.default
 targetEntityType: node
-bundle: things
+bundle: maybes
 mode: default
 content:
   body:
@@ -23,7 +23,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_thing_tax:
+  field_maybe_tax:
     weight: 103
     label: above
     settings:
@@ -31,7 +31,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_things_image:
+  field_maybeimage:
     weight: 102
     label: above
     settings:

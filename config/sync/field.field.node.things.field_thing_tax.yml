@@ -1,0 +1,29 @@
+uuid: 3e8bd515-2ecf-49ae-925f-a9ae6aaabd9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thing_tax
+    - node.type.things
+    - taxonomy.vocabulary.taggers
+id: node.things.field_thing_tax
+field_name: field_thing_tax
+entity_type: node
+bundle: things
+label: 'thing tax'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      taggers: taggers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.stuff.body
     - field.field.node.stuff.field_stuff_image
+    - field.field.node.stuff.field_stuff_tax
     - image.style.thumbnail
     - node.type.stuff
   module:
@@ -38,6 +39,15 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_stuff_tax:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path

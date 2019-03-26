@@ -1,0 +1,30 @@
+uuid: b523485d-8156-4461-b169-fbb06f7fac76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.maybes.body
+    - node.type.maybes
+  module:
+    - text
+    - user
+id: node.maybes.teaser
+targetEntityType: node
+bundle: maybes
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

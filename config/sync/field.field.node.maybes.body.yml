@@ -1,0 +1,22 @@
+uuid: 0b7260e3-a05a-4120-a24f-48a629677cf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.maybes
+  module:
+    - text
+id: node.maybes.body
+field_name: body
+entity_type: node
+bundle: maybes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
